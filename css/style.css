@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*
+*
+* name:
+*
+* description
+* version:
+* date:
+* // norm: #1EAEDB
+* // hover: #0FA0CE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Mobile first queries */
+/* base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  padding-top: 150px;
+  box-sizing: border-box;
+  background: #fefefe;
+}
+
+.container {
+  /*set max-width if needed*/
+}
+
+.page-wrap {
+  position: relative;
+}
+
+/* smaller buttons */
+.button,
+button,
+input,
+input[type=text],
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+
+  background-color: #fff;
+}
+
+/* layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* page header */
+.header {
+  padding: 8px 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;
+  background-color: #fff;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+/* logo */
+.logo {
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* TOP navigation ONLY */
+.nav {
+  padding-top: 8px;
+}
+.nav ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li a {
+  padding: 12px 8px;
+  border-right: 1px inset #eee;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in;
+  color: inherit;
+}
+.nav ul li:last-child a {
+  border: none;
+}
+
+#top-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#top-search a {
+  margin-right: 8px;
+}
+
+/* search box */
+.top-search_box {
+  display: inline;
+  padding: 8px 0;
+}
+
+/* footer */
+.footer {
+  background-color: #eee;
+  padding: 30px 0;
+}
+
+/* sections */
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  letter-spacing: 0.03em;
+}
+
+/* panel UI */
+.panel {
+  background-color: #fefefe;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 4px;
+  background: -webkit-linear-gradient(#fefefe, #eee);
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fefefe, #eee);
+  /* Standard syntax */
+}
+
+.gradient-1 {
+  background: -webkit-linear-gradient(#fefefe, #eee);
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fefefe, #eee);
+  /* Standard syntax */
+}
+
+/* catalog listing */
+.catalog-list {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+}
+
+.catalog-item {
+  position: relative;
+  /*overflow: hidden;*/
+  /*height: 320px;*/
+  /* override panel class attrs. */
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.catalog-item a img {
+  box-sizing: border-box;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  opacity: 0.8;
+}
+.catalog-item a img:hover {
+  -webkit-transition: opacity 0.2s ease-in;
+          transition: opacity 0.2s ease-in;
+  opacity: 1.0;
+}
+
+/* important! this will allow the fourth
+   item to collapse without breaking the grid */
+.catalog-list .catalog-item:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.catalog-item_detail h3,
+.catalog-item_name {
+  font-size: 24px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.price-tag {
+  padding: 10px 0;
+}
+
+.old-price {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 21px;
+  color: red;
+}
+
+/* stats UI */
+ul.stats,
+.stats {
+  list-style: none;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+ul.stats li,
+.stats li {
+  /* float: left; */
+  display: inline-block;
+  /* text-align: center; */
+  box-sizing: border-box;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #d7d7d7;
+}
+ul.stats li a,
+.stats li a {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+}
+ul.stats li span,
+.stats li span {
+  display: block;
+  font-weight: normal;
+  font-size: 15px;
+}
+ul.stats li:last-child,
+.stats li:last-child {
+  border: none;
+}
+
+/* Shopping Cart */
+.cart-item_info a {
+  text-decoration: none;
+}
+.cart-item_info img {
+  float: left;
+  box-sizing: border-box;
+}
+.cart-item_info .cart-item_details {
+  display: inline-block;
+  margin-left: 10px;
+}
+.cart-item_info .cart-item_details h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.cart-total {
+  background-color: #eee;
+  color: #777;
+}
+
+/* vendors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Catalog || Admin Sidebar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.sidebar {
+  /* try FIXED too! */
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  border: 1px solid #d7d7d7;
+  padding: 8px 0 0;
+  /* 100% might go further than needed */
+  /*height: 100%;*/
+  border-radius: 0px 14px 0px 0px;
+  width: 200px;
+  /* used with fixed, may cause trouble with header z-index */
+  /*z-index: 400;*/
+  background-color: #fff;
+}
+.sidebar-nav {
+  list-style-type: none;
+  border-bottom: 2px solid #d7d7d7;
+  margin-bottom: 0;
+}
+.sidebar-nav li {
+  /* border: 1px solid #808080; */
+   /*padding-left: 8px;*/
+   /*padding-bottom: 7px;*/
+  padding: 4px 0 4px 8px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+.sidebar-nav li a {
+  text-decoration: none;
+}
+.sidebar-nav li:hover {
+  background-color: #d7d7d7;
+  cursor: pointer;
+}
+.sidebar-nav li.active {
+  background-color: #1EAEDB;
+}
+.sidebar-nav li.active a {
+  color: #fff;
+}
+
+.sidebar-header {
+  font-size: 18px;
+  padding: 6px 0 6px 8px;
+  margin: 0;
+}
+
+
+/* utitlies
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.alert {
+  border: 1px solid #d7d7d7;
+  /*width: 100%;*/
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: inherit;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.alert-success {
+  background-color: #B3F098;
+  border-color: #56C228;
+}
+.alert-info {
+  background-color: #93AADB;
+  border-color: #3E5EA2;
+}
+.alert-warning {
+  background-color: #FFF0A2;
+  border-color: #E1C42E;
+}
+.alert-error {
+  background-color: #F89EAE;
+  border-color: #D32C49;
+}
+
+.text-success {
+  color: #56C228;
+}
+.text-info {
+  color: #3E5EA2;
+}
+.text-warning {
+  color: #E1C42E;
+}
+.text-error {
+  color: #D32C49;
+}
+
+/* text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-muted {
+  color: #777;
+}
+
+
+/* ADD AFTER ZIP DOWNLOAD
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* jumbo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.jumbo {
+  background-color: #1EAEDB;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #efefef;
+  margin-bottom: 30px;
+  border: 1px solid #d7d7d7;
+}
+.jumbo h1 {
+  font-size: 42px;
+  padding: 15px 0;
+}
+.jumbo p {
+  font-size: 24px;
+  line-height: 1.9;
+}
+
+.jumbo.gradient-1,
+.jumbo .gradient-1 {
+  color: #1EAEDB;
+  border: 1px solid #0FA0CE;
+}
+.jumbo.gradient-1 > input[type=button],
+.jumbo.gradient-1 .button,
+.jumbo .gradient-1 > input[type=button],
+.jumbo .gradient-1 .button {
+  background-color: #1EAEDB;
+  color: #efefef;
+  border-color: #eee;
+}
+
+.gradient-2 {
+  background: -webkit-linear-gradient(#1EAEDB, #0FA0CE);
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1EAEDB, #0FA0CE);
+  /* Standard syntax */
+}
+
+
+
+/* responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+/* Larger than phablet */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
